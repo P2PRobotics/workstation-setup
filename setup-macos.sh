@@ -86,3 +86,9 @@ _brew_cask flux
 
 ${BREW} doctor
 
+# git config
+git config --global pull.rebase true
+git config --global rebase.autoStash true
+git config --global credential.helper ""
+git config --global --unset user.name
+git config --global --unset user.email
