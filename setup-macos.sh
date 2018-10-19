@@ -48,8 +48,8 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder AppleShowAllFiles -bool false
 
 ## Keyboard
-defaults write -g InitialKeyRepeat -int 1 # normal minimum is 15 (225 ms)
-defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30 ms)
 
 ## Homebrew
 [ -x /usr/local/bin/brew ] || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -92,3 +92,5 @@ git config --global rebase.autoStash true
 git config --global credential.helper ""
 git config --global --unset user.name
 git config --global --unset user.email
+git config --global user.email p2proboticsftc@gmail.com
+git config --global user.name "Puma Robotics"
